@@ -1,0 +1,325 @@
+.clear {
+  clear: both;
+  height: 0;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.ui-mobile-viewport {
+  margin-bottom: 0px !important;
+}
+.ui-loader {
+  display: none !important;
+}
+.RegistrationWrapper {
+  width: 1160px;
+  margin: 0 auto;
+  font-family: Arial;
+  display: none;
+
+  .commands {
+    clear: both;
+  }
+
+  .next {
+    display: inline-block;
+    height: 60px;
+    width: 160px;
+    font-size: 18px;
+    background: $AnswerLaterLinkBack;
+    color: $AnswerLaterLinkColor;
+    margin-right: 15px;
+    text-decoration: none;
+    line-height: 60px;
+    text-align: center;
+  }
+  .prev {
+    @extend .next;
+  }
+  .mobile-step {
+    display: none;
+  }
+  .registration-white {
+    background: $RegistrationWhiteBack;
+    color: $RegistrationWhiteFontColor;
+  }
+  .registration-blue {
+    background: $RegistrationBlueBack;
+    color: $RegistrationBlueFontColor;
+  }
+  .user-registration {
+    border: 0;
+    margin: 0;
+    padding: 60px 2% 30px 2%;
+    .user-registration-left {
+      float: left;
+      width: 39%;
+      padding-right: 4%;
+      h1 {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 48px;
+        padding: 0 0 30px;
+        margin: 0;
+       }
+      h2 {
+        font-size: 24px;
+        font-style: italic;
+        padding: 0 0 7px;
+        margin: 0;
+        font-weight: normal;
+       }
+      h3 {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        font-weight: normal;
+       }
+     .answer-later {
+        display: block;
+        height: 60px;
+        width: 160px;
+        font-size: 18px;
+        background: $AnswerLaterLinkBack;
+        color: $AnswerLaterLinkColor;
+        margin: 15px 0;
+        text-decoration: none;
+        line-height: 60px;
+        text-align: center;
+     }
+    }
+    .user-registration-right {
+      float: left;
+      width: 57%;
+      .user-registration-social {
+        margin-bottom: 20px;
+        a {
+          display: inline-block;
+          width: 305px;
+          height: 92px;
+          background: $UserRegistrationBack;
+          text-decoration: none;
+          margin-right: 20px;
+          span {
+            display: block;
+            color: $UserRegistrationFontColor;
+            font-size: 16px;
+            padding-left: 67px;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            line-height: 50px;
+            font-weight: bold;
+            margin: 20px 0 0 20px;
+          }
+          &.facebook-user {
+            span {
+             background-image: image-url('f-icon.jpg');
+            }
+          }
+          &.google-user {
+            margin-right: 0;
+            span {
+              background-image: image-url('g-icon.jpg');
+            }
+          }
+        }
+      }
+      .ui-input-text {
+        position: relative;
+      }
+      p {
+        font-size: 18px;
+        color: $UserRegistrationRightPColor;
+        padding: 0;
+        margin: 0 0 20px 0;
+        line-height: 18px;
+      }
+      label {
+        font-size: 18px;
+        display: block;
+        margin: 0 0 10px 0;
+        line-height: 18px;
+        &.error {
+          position: absolute;
+          top: 47px;
+          left: 0;
+          margin: 0;
+          color: $UserRregistrationRightInputBorderError;
+          font-size: 16px;
+        }
+      }
+      input {
+        width: 100%;
+        padding: 0 5px;
+        margin: 0 0 25px;
+        height: 43px;
+        background: image-url('registration-input.jpg') top left repeat-x;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 2px solid $UserRregistrationRightInputBorder;
+        &.error {
+          border: 2px solid $UserRregistrationRightInputBorderError;
+         }
+        &:focus {
+          border: 2px solid $UserRegistrationRightPColor;
+       }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          float: left;
+          margin-left: 30px;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+      .user-secondary-info-first {
+        #state-button {
+          span {
+            display: none;
+          }
+        }
+        input {
+          &.big {
+            width: 245px;
+          }
+          &.small {
+            width: 160px;
+          }
+        }
+        select {
+          width: 168px;
+          height: 43px;
+          border: 2px solid $UserRregistrationRightInputBorder;
+        }
+      }
+      .user-secondary-info-second {
+        #state-button {
+          span {
+            display: none;
+          }
+        }
+        input {
+          width: 360px;
+          &.big {
+            width: 155px;
+          }
+          &.small {
+            width: 59px;
+          }
+        }
+        select {
+          width: 168px;
+          height: 43px;
+          border: 2px solid $UserRregistrationRightInputBorder;
+        }
+      }
+      .user-secondary-info-card {
+        p {
+          padding: 0;
+          margin: 0 0 10px 0;
+          color: $RegistrationBlueFontColor;
+        }
+        .expiration-date {
+          .ui-input-text {
+            float: left;
+          }
+          input {
+            float: left;
+            &.big {
+              width: 80px;
+            }
+            &.small {
+              width: 50px;
+            }
+          }
+          span {
+            float: left;
+            font-size: 18px;
+            display: block;
+            width: 34px;
+            height: 43px;
+            background: image-url('white-dash.jpg') top left no-repeat;
+          }
+        }
+      }
+      .user-registration-summary {
+        li {
+          float: none;
+          margin: 0 0 5px;
+          position: relative;
+          min-height: 59px;
+          .edit-info {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            width: 255px;
+            height: 59px;
+            text-align: center;
+            text-decoration: none;
+            background: $UserSummaryEditLinkBack;
+            color: $RegistrationBlueFontColor;
+            line-height: 59px;
+          }
+          .user-summary-value {
+            font-size: 24px;
+            color: $UserSummaryValueFontColor;
+            display: block;
+            margin-top: 10px;
+          }
+        }
+      }
+      .user-registration-submit {
+        text-align: center;
+        margin-top: 45px;
+        button {
+          background: $UserRegistrationBack;
+          color: $AnswerLaterLinkColor;
+          border: 0;
+          text-align: center;
+          padding: 25px 45px;
+          cursor: pointer;
+          font-size: 18px;
+          line-height: 18px;
+        }
+      }
+      .user-registration-pyment-method {
+        .paypal {
+          width: 255px;
+          height: 110px;
+          background: image-url('pay-pal.jpg') top left no-repeat;
+          margin: 0 20px 40px 0px;
+          display: inline-block;
+        }
+        .master-card {
+          width: 350px;
+          height: 110px;
+          background: image-url('master-card.jpg') top left no-repeat;
+          display: inline-block;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    &.registration-blue {
+      input {
+        background: image-url('registration-input-blue.jpg') top left repeat-x;
+      }
+      label {
+        &.error {
+          color: $UserRregistrationRightBlueError;
+        }
+      }
+      .mobile-step {
+        color: $RegistrationBlueFontColor;
+        clear: left;
+      }
+    }
+  }
+}

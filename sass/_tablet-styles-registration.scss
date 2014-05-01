@@ -1,0 +1,122 @@
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 1024px) {
+  .fancybox-inner {
+    height: auto !important;
+  }
+  .RegistrationWrapper {
+    width: 100%;
+    .user-registration-left {
+      width: 30%;
+    }
+    .user-registration-right {
+      width: 66%;
+      .user-secondary-info-first {
+        input {
+          width: 100% !important;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          &.big {
+            width: 100% !important;
+          }
+          &.small {
+            width: 100% !important;
+          }
+        }
+        select {
+          width: 100% !important;
+        }
+        ul {
+          li {
+            margin-left: 0 !important;
+            .user-secondary-responsive {
+              }
+              &.user-secondary-responsive-city {
+                width: 48%;
+                margin-right: 2%;
+              }
+              &.user-secondary-responsive-state {
+                width: 23%;
+                margin-right: 2%
+              }
+              &.user-secondary-responsive-zip-code {
+                width: 25%;
+              }
+            }
+          }
+        }
+      .user-secondary-info-second {
+        input {
+          width: 100% !important;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          &.big {
+            width: 100% !important;
+          }
+          &.small {
+            width: 100% !important;
+          }
+        }
+        select {
+          width: 100% !important;
+        }
+        ul {
+          li {
+            margin-left: 0 !important;
+            .user-secondary-responsive {
+            }
+            &.user-secondary-responsive-country {
+              width: 12%;
+              margin-right: 2%;
+            }
+            &.user-secondary-responsive-area-code {
+              width: 34%;
+              margin-right: 2%
+            }
+            &.user-secondary-responsive-phone {
+              width: 50%;
+            }
+          }
+        }
+      }
+      .user-registration-social {
+        .facebook-user {
+          margin-bottom: 20px;
+        }
+      }
+     }
+    .mobile-step {
+      display: block;
+    }
+    .prev {
+      display: none;
+    }
+    .next {
+      display: none;
+    }
+  }
+}
+@media only screen and (min-device-width : 700px) and (max-device-width : 800px) {
+  .RegistrationWrapper {
+    width: 100%;
+    .user-registration {
+      .user-registration-left {
+        width: 30%;
+      }
+      .user-registration-right {
+        width: 66%;
+     }
+    }
+    #step4 {
+      .user-registration {
+      .user-registration-left {
+        display: none;
+        }
+      .user-registration-right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

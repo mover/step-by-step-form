@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/formToWizard.js"></script>
+
+
+</head>
+<body>
+<script type="text/javascript">
+      $(document).ready(function(){
+				$.extend($.event.special.swipe,{
+					scrollSupressionThreshold: 10,
+					durationThreshold: 1000,
+					horizontalDistanceThreshold: 30,
+					verticalDistanceThreshold: 75
+				});
+        $("#SignupForm").formToWizard({ submitButton: 'SaveAccount' });
+        $('#SignupForm').validate({
+            ignore: ':hidden',
+            rules: {
+                name: {
+                    required: true,
+                    digits: true,
+                    minlength: true
+
+                }
+            }
+        });
+        $(".register").fancybox({
+            maxWidth	: 1160,
+            mitToView	: false,
+            width		: 'auto',
+            height		: 'auto',
+            autoSize	: false,
+            closeClick	: false,
+            openEffect	: 'none',
+            closeEffect	: 'none'
+        });
+
+  });
+
+</script>
+    <a href="#sign-up-popup" class="register">Register</a>
+    <div class="RegistrationWrapper" id="sign-up-popup">
+        <form id="SignupForm" action="">
+        <fieldset class="user-registration registration-white">
+            <div class="user-registration-left">
+                <h2>Step One</h2>
+                <h1>how would you like to log in?</h1>
+                <h3>Please select the credentials you’d like to use to log in</h3>
+            </div>
+            <div class="user-registration-right">
+                <div class="user-registration-social">
+                    <a href="#" class="facebook-user"><span>Sign In With Facebook</span></a>
+                    <a href="#" class="google-user"><span>Sign In With Google+</span></a>
+                </div>
+                <p>OR enter your email and select a password:</p>
+                <label for="email">email</label>
+                <input id="email" type="text" name="email" class="required email" />
+                <label for="password">password</label>
+                <input id="password" name="password" type="password" class="required" minlength="5"  />
+                <label for="cpassword">repeat password</label>
+                <input id="cpassword" name="cpassword" equalto="#password" type="password" />
+                <p class="mobile-step">Swipe to left to see next step</p>
+            </div>
+        </fieldset>
+        <fieldset class="user-registration registration-blue">
+            <div class="user-registration-left">
+                <h2>Step Two</h2>
+                <h1>who are you?</h1>
+                <h3>Let us know how to refer to you</h3>
+            </div>
+            <div class="user-registration-right">
+                <label for="first-name">first name</label>
+                <input id="first-name" name="first-name" type="text" class="required"  />
+                <label for="last-name">last name</label>
+                <input id="last-name" name="last-name" type="text" class="required" />
+                <label for="role">title or role (option)</label>
+                <input id="role" name="role" type="text" />
+                <p class="mobile-step">Swipe to left to see next step</p>
+            </div>
+        </fieldset>
+        <fieldset class="user-registration registration-white">
+            <div class="user-registration-left">
+                <h2>Step Three</h2>
+                <h1>how can we contact you?</h1>
+                <h3>We should know how to get in touch with you in case we need to. We won’t share this information with anyone.</h3>
+                <div id='step2right'></div>
+            </div>
+            <div class="user-registration-right">
+                <label for="address1">address line 1</label>
+                <input id="address1" name="address1" type="text" />
+                <label for="address2">address line 2</label>
+                <input id="address2" name="address2" type="text" />
+                <div class="user-secondary-info-first user-secondary-info-bottom">
+                    <ul>
+                        <li class="user-secondary-responsive user-secondary-responsive-city">
+                            <label for="city">city</label>
+                            <input id="city" name="city" type="text" class="big" />
+                        </li>
+                        <li class="user-secondary-responsive user-secondary-responsive-state">
+                            <label for="state">state</label>
+                            <select id="state" name="state">
+                                <option value=""></option>
+                            </select>
+                        <li class="user-secondary-responsive user-secondary-responsive-zip-code">
+                            <label for="zip-code">zip code</label>
+                            <input id="zip-code" name="zip-code" type="text" class="small digits" />
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="user-secondary-info-second user-secondary-info-bottom">
+                    <ul>
+                        <li class="user-secondary-responsive user-secondary-responsive-country">
+                            <label for="country">country</label>
+                            <input id="country" name="country" type="text" class="small" />
+                        </li>
+                        <li class="user-secondary-responsive user-secondary-responsive-area-code">
+                            <label for="area-code">area code</label>
+                            <input id="area-code" name="area-code" type="text" class="big" />
+                        </li>
+                        <li class="user-secondary-responsive user-secondary-responsive-phone">
+                            <label for="phone">phone number</label>
+                            <input id="phone" name="phone" type="text" class="digits" />
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <p class="mobile-step">Swipe to left to see next step</p>
+            </div>
+        </fieldset>
+        <fieldset class="user-registration registration-blue">
+            <div class="user-registration-left">
+                <h2>Step Four:</h2>
+                <h1>how do you prefer to make and receive payments?</h1>
+                <h3>Adding a payment method doesn’t authorize us (or anyone else) to charge you anything</h3>
+                <div id='step3right'></div>
+            </div>
+            <div class="user-registration-right">
+                <div class="user-registration-pyment-method">
+                    <a href="#" title="" class="paypal"></a>
+                    <a href="#" title="" class="master-card"></a>
+                </div>
+                <label for="card-name">cardholder name</label>
+                <input id="card-name" name="card-name" type="text" />
+                <label for="card-number">card number</label>
+                <input id="card-number" name="card-number" class="digits" type="text" />
+                <div class="user-secondary-info-card">
+                    <ul>
+                        <li>
+                            <label for="security-code">security code</label>
+                            <input id="security-code" name="security-code" type="text" />
+                        </li>
+                        <li>
+                            <p>expiration date</p>
+                            <div class="expiration-date">
+                                <input id="year" name="year" type="text" class="small" />
+                                <span class="sep"></span>
+                                <input id="month" name="month" type="text" class="big" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <p class="mobile-step">Swipe to left to see next step</p>
+            </div>
+        </fieldset>
+         <fieldset class="user-registration registration-white">
+             <div class="user-registration-left">
+                 <h2>Step Five:</h2>
+                 <h1>please double check your information</h1>
+                 <h3>We want to make sure we got everything right for you</h3>
+             </div>
+             <div class="user-registration-right">
+                <div class="user-registration-summary">
+                    <ul>
+                        <li>
+                            <span>name</span>
+                            <span class="user-summary-value"></span>
+                            <div class="right-user-summary">
+                                <a href="first-name" class="edit-info">Fix my name</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span>role</span>
+                            <span class="user-summary-value"></span>
+                            <div class="right-user-summary">
+                                <a href="role" class="edit-info">Change my role</a>
+                            </div>
+                        </li>
+                        <li>
+                           <span>address</span>
+                            <span class="user-summary-value"></span>
+                            <div class="right-user-summary">
+                                <a href="address1" class="edit-info">Fix my address</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span>phone</span>
+                            <span class="user-summary-value"></span>
+                            <div class="right-user-summary">
+                                <a href="phone" class="edit-info">Fix my phone number</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span>email</span>
+                            <span class="user-summary-value"></span>
+                            <div class="right-user-summary">
+                                <a href="email" class="edit-info">Change my email</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span>preferred payment method</span>
+                            <span class="user-summary-value"></span>
+                            <div class="right-user-summary">
+                                <a href="card-name" class="edit-info">Pay another way</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                 <div class="user-registration-submit">
+                    <button id="SaveAccount" type="submit" name="submit" value="Everything looks good">Everything looks good</button>
+                 </div>
+              </div>
+         </fieldset>
+        </form>
+    </div>
+</body>
+</html>
