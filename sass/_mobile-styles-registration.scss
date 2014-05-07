@@ -1,0 +1,89 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 766px) {
+  .fancybox-inner {
+    height: auto !important;
+  }
+  .RegistrationWrapper {
+    width: 100%;
+    .user-registration {
+      width:   96%;
+      padding: 0 2%;
+      &.registration-blue {
+        padding-top: 10px;
+      }
+      .user-registration-left {
+        display: none;
+      }
+      .user-registration-right {
+        width: 100%;
+        .user-registration-social {
+          a {
+            width:        100%;
+            float:        none;
+            margin-right: 0;
+            &.facebook-user {
+              margin-bottom: 10px;
+            }
+          }
+        }
+        ul {
+        li {
+          width: 100%;
+          float: none;
+          margin-left: 0;
+        }
+        }
+        .user-secondary-info-first {
+          input {
+            &.big {
+              width: 100%;
+            }
+            &.small {
+              width: 100%;
+            }
+          }
+          select {
+            width: 100%;
+          }
+        }
+        .user-secondary-info-bottom {
+          input {
+            width: 100%;
+            &.big {
+              width: 100%;
+            }
+            &.small {
+              width: 100%;
+            }
+          }
+        }
+        .user-registration-summary {
+          li {
+            .edit-info {
+              width: 131px;
+            }
+            .user-summary-value {
+              width: 52%;
+            }
+          }
+        }
+        .user-registration-pyment-method {
+          .master-card {
+            background: image-url('master-card-mobile.jpg') top left no-repeat;
+            width: 300px;
+            height: 95px;
+            margin-bottom: 10px;
+          }
+          .paypal {
+            margin: 0px 0 10px 0px;
+          }
+        }
+      }
+      .commands {
+        display: none;
+      }
+    }
+    .mobile-step {
+      display: block;
+    }
+  }
+}

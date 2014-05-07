@@ -300,7 +300,7 @@ body {
   clear: left;
 }
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
   .fancybox-inner {
     height: auto !important;
   }
@@ -385,7 +385,7 @@ body {
     display: none;
   }
 }
-@media only screen and (min-device-width: 700px) and (max-device-width: 800px) {
+@media only screen and (min-device-width: 767px) and (max-device-width: 800px) {
   .RegistrationWrapper {
     width: 100%;
   }
@@ -400,5 +400,79 @@ body {
   }
   .RegistrationWrapper #step4 .user-registration .user-registration-right {
     width: 100%;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 766px) {
+  .fancybox-inner {
+    height: auto !important;
+  }
+
+  .RegistrationWrapper {
+    width: 100%;
+  }
+  .RegistrationWrapper .user-registration {
+    width: 96%;
+    padding: 0 2%;
+  }
+  .RegistrationWrapper .user-registration.registration-blue {
+    padding-top: 10px;
+  }
+  .RegistrationWrapper .user-registration .user-registration-left {
+    display: none;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right {
+    width: 100%;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-registration-social a {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-registration-social a.facebook-user {
+    margin-bottom: 10px;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right ul li {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-secondary-info-first input.big {
+    width: 100%;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-secondary-info-first input.small {
+    width: 100%;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-secondary-info-first select {
+    width: 100%;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-secondary-info-bottom input {
+    width: 100%;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-secondary-info-bottom input.big {
+    width: 100%;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-secondary-info-bottom input.small {
+    width: 100%;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-registration-summary li .edit-info {
+    width: 131px;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-registration-summary li .user-summary-value {
+    width: 52%;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-registration-pyment-method .master-card {
+    background: url('../images/master-card-mobile.jpg') top left no-repeat;
+    width: 300px;
+    height: 95px;
+    margin-bottom: 10px;
+  }
+  .RegistrationWrapper .user-registration .user-registration-right .user-registration-pyment-method .paypal {
+    margin: 0px 0 10px 0px;
+  }
+  .RegistrationWrapper .user-registration .commands {
+    display: none;
+  }
+  .RegistrationWrapper .mobile-step {
+    display: block;
   }
 }
