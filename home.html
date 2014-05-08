@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/TabletMenu.js"></script>
+    <script src="js/jquery.mmenu.min.js"></script>
+    <script>
+
+
+        $(document).ready(function(){
+            var windowW = $( window ).width();
+            if (windowW > 768 && windowW < 1025) {
+                TabletMenu.init();
+             }
+            if (windowW < 767) {
+            $('.drop-down-items').appendTo('#menu');
+                $('nav#menu').mmenu({
+                    slidingSubmenus: false
+                });
+            }
+
+        });
+
+    </script>
+
+</head>
+<body>
+<nav id="menu">
+
+</nav>
+    <div class="HeaderTopImage"></div>
+    <div class="HeaderMainWrapper">
+        <div class="HeaderContainer">
+            <div class="LogoContainer">
+                <a href="#" title=""><img src="images/logo.jpg" alt="" /></a>
+            </div>
+            <div class="HeaderMenuContainer">
+                <ul class="drop-down-menu">
+
+                    <li class="drop-down-text"><a href="#"><span class="menu-text">&nbsp;</span><span class="arrow"></span></a></li>
+                    <li>
+                        <a href="#menu" class="toggle-menu">Click</a>
+                        <ul class="drop-down-items">
+                            <li><a href="#" title="">Home</a></li>
+                            <li><a href="#" title="" class="active">Category 1</a></li>
+                            <li><a href="#" title="">Category 2</a></li>
+                            <li><a href="#" title="">Category 3</a></li>
+                            <li><a href="#" title="">Category 4</a></li>
+                            <li><a href="#" title="">Category 5</a></li>
+                            <li><a href="#" title="">FAQ</a></li>
+                            <li><a href="#" title="">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="HeaderSearchContainer">
+                <input type="text" name="search" />
+            </div>
+            <div class="RightHeaderContainer">
+                <div class="HeaderUserContainer">
+                    <a href="#" title="">
+                        <img src="images/user-icon.jpg" alt="" />
+                        <span>{{User Name}}</span>
+                    </a>
+                    <div class="clear"></div>
+                </div>
+                <div class="HeaderCartContainer">
+                    <a href="#" title="">
+                        <img src="images/cart-icon.jpg" alt="" />
+                        <span>2 items in cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="MainContentWrapper">
+        <div class="TopContentBlock">
+            <div class="TopLeftContentBlock"></div>
+            <div class="TopRightContentBlock">
+                <div class="TopRightContentBlockFirst"></div>
+                <div class="TopRightContentBlockSecond"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="SecondContentBlockWrapper">
+            <div class="SecondContentBlock">
+                <div class="SecondContentBlockProductLeft">
+                    <img src="images/some-product-test.jpg" alt="" />
+                </div>
+                <div class="SecondContentBlockProductRight">
+                    <h1>Featured Product</h1>
+                    <p>
+                        Nam euismod vestibulum metus id aliquet. Cras
+                        fermentum vestibulum imperdiet. Phasellus a ligula
+                        porta, lacinia felis at, placerat nibh. Cras dictum iaculis
+                        mattis. Nam vehicula est et risus suscipit, a elementum
+                        enim vulputate.
+                    </p>
+                    <span><span class="up">$</span>999<span class="up">.99</span></span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="ThirdContentBlockWrapper">
+            <ul>
+                <li>
+                    <a href="#" title="">&nbsp;</a>
+                    <p>FEATURED PRODUCT</p>
+                    <span>$99.99</span>
+                </li>
+                <li>
+                    <a href="#" title="">&nbsp;</a>
+                    <p>FEATURED PRODUCT</p>
+                    <span>$99.99</span>
+                </li>
+                <li>
+                    <a href="#" title="">&nbsp;</a>
+                    <p>FEATURED PRODUCT</p>
+                    <span>$99.99</span>
+                </li>
+                <li>
+                    <a href="#" title="">&nbsp;</a>
+                    <p>FEATURED PRODUCT</p>
+                    <span>$99.99</span>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="FourthContentBlockWrapper">
+            <div class="FourthContentBlock">
+                <div class="FourthContentBlockLeft">
+                    <img src="images/some-picture-test.jpg" alt="">
+                    <span>WHat is this? Why, it`s a river. and aren`t you happy to know that?</span>
+                </div>
+                <div class="FourthContentBlockRight">
+                    <span>Nam euismod vestibulum metus id aliquet. Cras
+                        fermentum vestibulum imperdiet. Phasellus a ligula
+                        porta, lacinia felis at, placerat nibh. Cras dictum iaculis
+                        mattis. Nam vehicula est et risus suscipit, a elementum
+                        enim vulputate. </span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="FifthContentBlock">
+            <div class="FifthContentLeft">
+                <span>Nam euismod vestibulum metus id aliquet. Cras
+                fermentum vestibulum imperdiet. Phasellus a ligula
+                porta, lacinia felis at, placerat nibh. Cras dictum iaculis
+                mattis. Nam vehicula est et risus suscipit, a elementum
+                enim vulputate. </span>
+            </div>
+            <div class="FifthContentRight">
+                <img src="images/some-picture-test.jpg" alt="">
+                <span>WHat is this? Why, it`s a river. and aren`t you happy to know that?</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="FooterContainerWrapper">
+        <div class="FooterContainer">
+            <div class="FooterMenuContainer">
+                <ul class="footer-menu">
+                    <li><a href="#" title="">Home</a></li>
+                    <li><a href="#" title="">Category 1</a></li>
+                    <li><a href="#" title="">Category 2</a></li>
+                    <li><a href="#" title="">Category 3</a></li>
+                    <li><a href="#" title="">Category 4</a></li>
+                    <li><a href="#" title="">Category 5</a></li>
+                    <li><a href="#" title="">FAQ</a></li>
+                    <li><a href="#" title="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="FooterSearchContainer">
+                <input type="text" name="search-footer" />
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

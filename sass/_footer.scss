@@ -1,0 +1,42 @@
+.FooterContainerWrapper {
+  width: 100%;
+  background: $FooterContainerWrapperBack;
+  min-height: 120px;
+  padding-bottom: 20px;
+  .FooterContainer {
+    width: 1110px;
+    margin: 0 auto;
+    padding-top: 26px;
+    .FooterMenuContainer {
+      float: left;
+      .footer-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          float: left;
+          a {
+            display: block;
+            padding: 8px 10px;
+            font-size: 14px;
+            color: $FooterMenuFontColor;
+            font-weight: bold;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .FooterSearchContainer {
+      float: left;
+      padding-left: 40px;
+      input {
+        background: $HeaderInputBack image-url('search-icon.jpg') top left no-repeat;
+        height: 26px;
+        padding: 2px 5px 2px 29px;
+        margin: 0;
+        width: 145px;
+        border: 0px;
+      }
+    }
+  }
+}

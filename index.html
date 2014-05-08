@@ -10,44 +10,41 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="js/formToWizard.js"></script>
+   <script>
+       $(document).ready(function(){
+           $.extend($.event.special.swipe,{
+               scrollSupressionThreshold: 10,
+               durationThreshold: 1000,
+               horizontalDistanceThreshold: 30,
+               verticalDistanceThreshold: 75
+           });
+           $("#SignupForm").formToWizard({ submitButton: 'SaveAccount' });
+           $('#SignupForm').validate({
+               ignore: ':hidden',
+               rules: {
+                   name: {
+                       required: true,
+                       digits: true,
+                       minlength: true
 
+                   }
+               }
+           });
 
+           $(".register").fancybox({
+               maxWidth	: 1160,
+               mitToView	: false,
+               width		: 'auto',
+               height		: 'auto',
+               autoSize	: false,
+               closeClick	: false,
+               openEffect	: 'none',
+               closeEffect	: 'none'
+           });
+       });
+   </script>
 </head>
 <body>
-<script type="text/javascript">
-      $(document).ready(function(){
-				$.extend($.event.special.swipe,{
-					scrollSupressionThreshold: 10,
-					durationThreshold: 1000,
-					horizontalDistanceThreshold: 30,
-					verticalDistanceThreshold: 75
-				});
-        $("#SignupForm").formToWizard({ submitButton: 'SaveAccount' });
-        $('#SignupForm').validate({
-            ignore: ':hidden',
-            rules: {
-                name: {
-                    required: true,
-                    digits: true,
-                    minlength: true
-
-                }
-            }
-        });
-        $(".register").fancybox({
-            maxWidth	: 1160,
-            mitToView	: false,
-            width		: 'auto',
-            height		: 'auto',
-            autoSize	: false,
-            closeClick	: false,
-            openEffect	: 'none',
-            closeEffect	: 'none'
-        });
-
-  });
-
-</script>
     <a href="#sign-up-popup" class="register">Register</a>
     <div class="RegistrationWrapper" id="sign-up-popup">
         <form id="SignupForm" action="">

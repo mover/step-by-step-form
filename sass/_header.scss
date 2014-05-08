@@ -1,0 +1,101 @@
+.HeaderTopImage {
+  width: 100%;
+  height: 320px;
+  background: image-url('homepage/top-back.jpg') top left repeat-x;
+}
+.HeaderMainWrapper {
+  background: $HeaderMainWrapperBack;
+  width: 100%;
+  height: 80px;
+}
+.HeaderContainer {
+  margin: 0 auto;
+  width: 1170px;
+  .toggle-menu {
+    display: none !important;
+  }
+  .LogoContainer {
+   padding: 14px 12px 0 0;
+   float: left;
+   }
+  .HeaderMenuContainer {
+    float: left;
+    padding-top: 25px;
+    .drop-down-menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        position: relative;
+        .drop-down-items {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            float: left;
+            a {
+              display: block;
+              padding: 8px 10px;
+              font-size: 14px;
+              color: $HeaderMenuFontColor;
+              font-weight: bold;
+              text-decoration: none;
+              &:hover {
+                background: $HeaderMenuBackHover;
+              }
+            }
+           }
+        }
+        &.drop-down-text {
+          display: none;
+        }
+      }
+    }
+  }
+  .HeaderSearchContainer {
+    padding: 24px 0 0 12px;
+    float: left;
+    input {
+      background: $HeaderInputBack image-url('search-icon.jpg') top left no-repeat;
+      border: 1px solid $HeaderInputBorder;
+      height: 26px;
+      padding: 2px 5px 2px 29px;
+      margin: 0;
+      width: 145px;
+    }
+  }
+  .RightHeaderContainer {
+    float: right;
+    .HeaderUserContainer {
+      width: 220px;
+      height: 40px;
+      background: $HeaderUserContainerBack;
+      img {
+        float: left;
+      }
+      span {
+        float: left;
+        font-size: 17px;
+        color: $HeaderUserContainerFontColor;
+        margin-left: 26px;
+        line-height: 40px;
+      }
+    }
+    .HeaderCartContainer {
+      background: $HeaderCartContainerBack;
+      width: 220px;
+      height: 40px;
+      img {
+        float: left;
+      }
+      span {
+        float: left;
+        font-size: 17px;
+        color: $HeaderUserContainerFontColor;
+        margin-left: 12px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+

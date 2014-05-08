@@ -1,4 +1,5 @@
 /* Visitor registration variables */
+
 $RegistrationWhiteBack:                   #ffffff;
 $RegistrationWhiteFontColor:              #00a3f5;
 $UserRegistrationRightPColor:             #5383ab;
@@ -13,3 +14,78 @@ $AnswerLaterLinkBack:                     #95d2ff;
 $AnswerLaterLinkColor:                    #1a598f;
 $UserRegistrationBack:                    #95d2ff;
 $UserRegistrationFontColor:               #4887b9;
+
+/* HeaderContainer variables */
+
+$HeaderMainWrapperBack:                   #00a3f5;
+$HeaderMenuFontColor:                     #1a1a1a;
+$HeaderMenuBackHover:                     #1a598f;
+$HeaderMenuBackTablet:                    #95d2ff;
+$HeaderInputBack:                         #ffffff;
+$HeaderInputBorder:                       #000000;
+$HeaderUserContainerBack:                 #282828;
+$HeaderUserContainerFontColor:            #ffffff;
+$HeaderCartContainerBack:                 #1a598f;
+
+/* ContentContainer variables */
+
+$SecondContentBlockWrapperBack:           #00a3f5;
+$SecondContentBlockProductRightColor:     #ffffff;
+$ThirdContentBlockWrapperColor:           #1a1a1a;
+$FourthContentBlockWrapperBack:           #00a3f5;
+$FourthContentBlockColor:                 #ffffff;
+
+/* FooterContainer variables */
+
+$FooterContainerWrapperBack:              #1d1d1d;
+$FooterMenuFontColor:                     #ffffff;
+
+
+@mixin css-arrow($arrow-position, $arrow-color, $arrow-size) {
+  &:after {
+    position: absolute;
+    border: solid transparent;
+    content: " ";
+    top: auto;
+    left: auto;
+    height: 0;
+    width: 0;
+    margin: 0;
+    border-color: transparent;
+    border-width: $arrow-size;
+    pointer-events: none;
+  }
+  @if $arrow-position == "top" {
+    &:after {
+      bottom: 100%;
+      border-bottom-color: $arrow-color;
+      margin-left: (-$arrow-size);
+      left: 50%;
+    }
+  }
+  @if $arrow-position == "right" {
+    &:after {
+      left: 100%;
+      border-left-color: $arrow-color;
+      margin-top: (-$arrow-size);
+      top: 50%;
+    }
+  }
+  @if $arrow-position == "bottom" {
+    &:after {
+      top: 100%;
+      border-top-color: $arrow-color;
+      margin-left: (-$arrow-size);
+      left: 50%;
+    }
+  }
+  @if $arrow-position == "left" {
+    &:after {
+      right: 100%;
+      border-right-color: $arrow-color;
+      margin-top: (-$arrow-size);
+      top: 50%;
+    }
+  }
+}
+

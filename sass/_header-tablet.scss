@@ -1,0 +1,67 @@
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
+  .HeaderTopImage {
+    display: none;
+  }
+  .HeaderMainWrapper {
+    height: 48px;
+    .LogoContainer {
+      padding: 0 10px;
+      width: 48px;
+      height: 48px;
+      overflow: hidden;
+    }
+  }
+  .HeaderContainer {
+    width: 100%;
+    .HeaderMenuContainer {
+      padding-top: 9px;
+    .drop-down-menu {
+      width: 170px;
+      padding: 5px;
+      background: $HeaderMenuBackTablet;
+      a {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        color: $HeaderMenuFontColor;
+        font-weight: bold;
+        text-decoration: none;
+        box-sizing:         border-box;
+        -moz-box-sizing:    border-box;
+        -webkit-box-sizing: border-box;
+        padding: 0px 6px;
+        position: relative;
+        .arrow {
+          position: absolute;
+          right: 9px;
+          top: 6px;
+          @include css-arrow(bottom, black, 7px);
+        }
+      }
+      li {
+        .drop-down-items {
+          display: none;
+          background: $HeaderMenuBackTablet;
+          display:none;
+          list-style:none;
+          padding:5px 0px;
+          position:absolute;
+          left: -5px;
+          top: 0px;
+          width:auto;
+          min-width:180px;
+          li {
+            float: none;
+          }
+        }
+        &.drop-down-text {
+          display: block;
+        }
+      }
+    }
+   }
+    .HeaderSearchContainer {
+      padding-top: 7px;
+    }
+  }
+}

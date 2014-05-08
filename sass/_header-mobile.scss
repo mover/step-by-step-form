@@ -1,0 +1,16 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 766px) {
+  .HeaderTopImage {
+    display: none;
+  }
+  .HeaderContainer {
+    width: 100%;
+    .toggle-menu {
+      display: block !important;
+    }
+    .HeaderMenuContainer {
+      .toggle-menu {
+        display: block;
+      }
+    }
+  }
+}

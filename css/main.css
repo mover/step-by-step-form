@@ -1,4 +1,403 @@
 /* Visitor registration variables */
+/* HeaderContainer variables */
+/* ContentContainer variables */
+/* FooterContainer variables */
+.HeaderTopImage {
+  width: 100%;
+  height: 320px;
+  background: url('../images/homepage/top-back.jpg') top left repeat-x;
+}
+
+.HeaderMainWrapper {
+  background: #00a3f5;
+  width: 100%;
+  height: 80px;
+}
+
+.HeaderContainer {
+  margin: 0 auto;
+  width: 1170px;
+}
+.HeaderContainer .toggle-menu {
+  display: none !important;
+}
+.HeaderContainer .LogoContainer {
+  padding: 14px 12px 0 0;
+  float: left;
+}
+.HeaderContainer .HeaderMenuContainer {
+  float: left;
+  padding-top: 25px;
+}
+.HeaderContainer .HeaderMenuContainer .drop-down-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.HeaderContainer .HeaderMenuContainer .drop-down-menu li {
+  position: relative;
+}
+.HeaderContainer .HeaderMenuContainer .drop-down-menu li .drop-down-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.HeaderContainer .HeaderMenuContainer .drop-down-menu li .drop-down-items li {
+  float: left;
+}
+.HeaderContainer .HeaderMenuContainer .drop-down-menu li .drop-down-items li a {
+  display: block;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #1a1a1a;
+  font-weight: bold;
+  text-decoration: none;
+}
+.HeaderContainer .HeaderMenuContainer .drop-down-menu li .drop-down-items li a:hover {
+  background: #1a598f;
+}
+.HeaderContainer .HeaderMenuContainer .drop-down-menu li.drop-down-text {
+  display: none;
+}
+.HeaderContainer .HeaderSearchContainer {
+  padding: 24px 0 0 12px;
+  float: left;
+}
+.HeaderContainer .HeaderSearchContainer input {
+  background: white url('../images/search-icon.jpg') top left no-repeat;
+  border: 1px solid black;
+  height: 26px;
+  padding: 2px 5px 2px 29px;
+  margin: 0;
+  width: 145px;
+}
+.HeaderContainer .RightHeaderContainer {
+  float: right;
+}
+.HeaderContainer .RightHeaderContainer .HeaderUserContainer {
+  width: 220px;
+  height: 40px;
+  background: #282828;
+}
+.HeaderContainer .RightHeaderContainer .HeaderUserContainer img {
+  float: left;
+}
+.HeaderContainer .RightHeaderContainer .HeaderUserContainer span {
+  float: left;
+  font-size: 17px;
+  color: white;
+  margin-left: 26px;
+  line-height: 40px;
+}
+.HeaderContainer .RightHeaderContainer .HeaderCartContainer {
+  background: #1a598f;
+  width: 220px;
+  height: 40px;
+}
+.HeaderContainer .RightHeaderContainer .HeaderCartContainer img {
+  float: left;
+}
+.HeaderContainer .RightHeaderContainer .HeaderCartContainer span {
+  float: left;
+  font-size: 17px;
+  color: white;
+  margin-left: 12px;
+  line-height: 40px;
+}
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
+  .HeaderTopImage {
+    display: none;
+  }
+
+  .HeaderMainWrapper {
+    height: 48px;
+  }
+  .HeaderMainWrapper .LogoContainer {
+    padding: 0 10px;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+  }
+
+  .HeaderContainer {
+    width: 100%;
+  }
+  .HeaderContainer .HeaderMenuContainer {
+    padding-top: 9px;
+  }
+  .HeaderContainer .HeaderMenuContainer .drop-down-menu {
+    width: 170px;
+    padding: 5px;
+    background: #95d2ff;
+  }
+  .HeaderContainer .HeaderMenuContainer .drop-down-menu a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    color: #1a1a1a;
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0px 6px;
+    position: relative;
+  }
+  .HeaderContainer .HeaderMenuContainer .drop-down-menu a .arrow {
+    position: absolute;
+    right: 9px;
+    top: 6px;
+  }
+  .HeaderContainer .HeaderMenuContainer .drop-down-menu a .arrow:after {
+    position: absolute;
+    border: solid transparent;
+    content: " ";
+    top: auto;
+    left: auto;
+    height: 0;
+    width: 0;
+    margin: 0;
+    border-color: transparent;
+    border-width: 7px;
+    pointer-events: none;
+  }
+  .HeaderContainer .HeaderMenuContainer .drop-down-menu a .arrow:after {
+    top: 100%;
+    border-top-color: black;
+    margin-left: -7px;
+    left: 50%;
+  }
+  .HeaderContainer .HeaderMenuContainer .drop-down-menu li .drop-down-items {
+    display: none;
+    background: #95d2ff;
+    display: none;
+    list-style: none;
+    padding: 5px 0px;
+    position: absolute;
+    left: -5px;
+    top: 0px;
+    width: auto;
+    min-width: 180px;
+  }
+  .HeaderContainer .HeaderMenuContainer .drop-down-menu li .drop-down-items li {
+    float: none;
+  }
+  .HeaderContainer .HeaderMenuContainer .drop-down-menu li.drop-down-text {
+    display: block;
+  }
+  .HeaderContainer .HeaderSearchContainer {
+    padding-top: 7px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 766px) {
+  .HeaderTopImage {
+    display: none;
+  }
+
+  .HeaderContainer {
+    width: 100%;
+  }
+  .HeaderContainer .toggle-menu {
+    display: block !important;
+  }
+  .HeaderContainer .HeaderMenuContainer .toggle-menu {
+    display: block;
+  }
+}
+.MainContentWrapper .TopContentBlock {
+  width: 1110px;
+  margin: 40px auto;
+}
+.MainContentWrapper .TopContentBlock .TopLeftContentBlock {
+  width: 65.76576576576577%;
+  margin-right: 2.7027027027027%;
+  background: #1a598f;
+  height: 410px;
+  float: left;
+}
+.MainContentWrapper .TopContentBlock .TopRightContentBlock {
+  float: left;
+  width: 31.53153153153153%;
+}
+.MainContentWrapper .TopContentBlock .TopRightContentBlock .TopRightContentBlockFirst, .MainContentWrapper .TopContentBlock .TopRightContentBlock .TopRightContentBlockSecond {
+  width: 100%;
+  background: #1a598f;
+  height: 196px;
+  margin-bottom: 18px;
+}
+.MainContentWrapper .TopContentBlock .TopRightContentBlock .TopRightContentBlockSecond {
+  margin-bottom: 0;
+}
+.MainContentWrapper .SecondContentBlockWrapper {
+  width: 100%;
+  background: #00a3f5;
+  padding: 40px 0;
+}
+.MainContentWrapper .SecondContentBlockWrapper .SecondContentBlock {
+  margin: 0 auto;
+  width: 1110px;
+}
+.MainContentWrapper .SecondContentBlockWrapper .SecondContentBlock .SecondContentBlockProductLeft {
+  width: 34.23423423423423%;
+  float: left;
+  text-align: center;
+}
+.MainContentWrapper .SecondContentBlockWrapper .SecondContentBlock .SecondContentBlockProductRight {
+  width: 65.76576576576577%;
+  float: left;
+}
+.MainContentWrapper .SecondContentBlockWrapper .SecondContentBlock .SecondContentBlockProductRight h1 {
+  font-size: 72px;
+  font-weight: normal;
+  color: white;
+  line-height: 72px;
+  margin: 0;
+  padding: 0 0 50px 0;
+}
+.MainContentWrapper .SecondContentBlockWrapper .SecondContentBlock .SecondContentBlockProductRight p {
+  color: white;
+  padding: 0 0 40px 0;
+  margin: 0;
+  font-size: 30px;
+  line-height: 40px;
+}
+.MainContentWrapper .SecondContentBlockWrapper .SecondContentBlock .SecondContentBlockProductRight span {
+  position: relative;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+.MainContentWrapper .SecondContentBlockWrapper .SecondContentBlock .SecondContentBlockProductRight span.up {
+  font-size: 40px;
+  top: -21px;
+}
+.MainContentWrapper .ThirdContentBlockWrapper {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.MainContentWrapper .ThirdContentBlockWrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.MainContentWrapper .ThirdContentBlockWrapper ul li {
+  float: left;
+  width: 22.97297297297297%;
+  margin-left: 2.61261261261261%;
+}
+.MainContentWrapper .ThirdContentBlockWrapper ul li:first-child {
+  margin-left: 0;
+}
+.MainContentWrapper .ThirdContentBlockWrapper ul li a {
+  width: 100%;
+  display: block;
+  background: #1a598f;
+  height: 320px;
+}
+.MainContentWrapper .ThirdContentBlockWrapper ul li p {
+  font-size: 24px;
+  color: #1a1a1a;
+  padding: 20px 0 10px 0;
+  margin: 0;
+}
+.MainContentWrapper .ThirdContentBlockWrapper ul li span {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+.MainContentWrapper .FourthContentBlockWrapper {
+  width: 100%;
+  padding: 40px 0;
+  background: #00a3f5;
+}
+.MainContentWrapper .FourthContentBlockWrapper .FourthContentBlock {
+  width: 1110px;
+  margin: 0 auto;
+  color: white;
+}
+.MainContentWrapper .FourthContentBlockWrapper .FourthContentBlock .FourthContentBlockLeft {
+  float: left;
+  width: 31.53153153153153%;
+  margin-right: 2.7027027027027%;
+}
+.MainContentWrapper .FourthContentBlockWrapper .FourthContentBlock .FourthContentBlockLeft span {
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.MainContentWrapper .FourthContentBlockWrapper .FourthContentBlock .FourthContentBlockRight {
+  float: left;
+  width: 65.76576576576577%;
+}
+.MainContentWrapper .FourthContentBlockWrapper .FourthContentBlock .FourthContentBlockRight span {
+  font-size: 24px;
+}
+.MainContentWrapper .FifthContentBlock {
+  width: 1110px;
+  margin: 40px auto;
+}
+.MainContentWrapper .FifthContentBlock .FifthContentLeft {
+  float: left;
+  margin-right: 2.7027027027027%;
+  width: 65.76576576576577%;
+}
+.MainContentWrapper .FifthContentBlock .FifthContentLeft span {
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.MainContentWrapper .FifthContentBlock .FifthContentRight {
+  float: left;
+  width: 31.53153153153153%;
+}
+.MainContentWrapper .FifthContentBlock .FifthContentRight span {
+  font-size: 24px;
+}
+
+.FooterContainerWrapper {
+  width: 100%;
+  background: #1d1d1d;
+  min-height: 120px;
+  padding-bottom: 20px;
+}
+.FooterContainerWrapper .FooterContainer {
+  width: 1110px;
+  margin: 0 auto;
+  padding-top: 26px;
+}
+.FooterContainerWrapper .FooterContainer .FooterMenuContainer {
+  float: left;
+}
+.FooterContainerWrapper .FooterContainer .FooterMenuContainer .footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.FooterContainerWrapper .FooterContainer .FooterMenuContainer .footer-menu li {
+  float: left;
+}
+.FooterContainerWrapper .FooterContainer .FooterMenuContainer .footer-menu li a {
+  display: block;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.FooterContainerWrapper .FooterContainer .FooterSearchContainer {
+  float: left;
+  padding-left: 40px;
+}
+.FooterContainerWrapper .FooterContainer .FooterSearchContainer input {
+  background: white url('../images/search-icon.jpg') top left no-repeat;
+  height: 26px;
+  padding: 2px 5px 2px 29px;
+  margin: 0;
+  width: 145px;
+  border: 0px;
+}
+
 .clear {
   clear: both;
   height: 0;
@@ -8,6 +407,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial;
 }
 
 .ui-mobile-viewport {

@@ -1,0 +1,152 @@
+.MainContentWrapper {
+  .TopContentBlock {
+    width: 1110px;
+    margin: 40px auto;
+    .TopLeftContentBlock {
+      width: 65.76576576576577%;
+      margin-right: 2.7027027027027%;
+      background: #1a598f;
+      height: 410px;
+      float: left;
+    }
+    .TopRightContentBlock {
+      float: left;
+      width: 31.53153153153153%;
+      .TopRightContentBlockFirst {
+        width: 100%;
+        background: #1a598f;
+        height: 196px;
+        margin-bottom: 18px;
+      }
+      .TopRightContentBlockSecond {
+        @extend .TopRightContentBlockFirst;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .SecondContentBlockWrapper {
+    width: 100%;
+    background: $SecondContentBlockWrapperBack;
+    padding: 40px 0;
+    .SecondContentBlock {
+      margin: 0 auto;
+      width: 1110px;
+      .SecondContentBlockProductLeft {
+        width: 34.23423423423423%;
+        float: left;
+        text-align: center;
+      }
+      .SecondContentBlockProductRight {
+        width: 65.76576576576577%;
+        float: left;
+        h1 {
+          font-size: 72px;
+          font-weight: normal;
+          color: $SecondContentBlockProductRightColor;
+          line-height: 72px;
+          margin: 0;
+          padding: 0 0 50px 0;
+        }
+        p {
+          color: $SecondContentBlockProductRightColor;
+          padding: 0 0 40px 0;
+          margin: 0;
+          font-size: 30px;
+          line-height: 40px;
+        }
+        span {
+          position: relative;
+          color: $SecondContentBlockProductRightColor;
+          font-size: 60px;
+          font-weight: bold;
+          &.up {
+            font-size: 40px;
+            top: -21px;
+          }
+        }
+      }
+    }
+  }
+  .ThirdContentBlockWrapper {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 40px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        float: left;
+        width: 22.97297297297297%;
+        margin-left: 2.61261261261261%;
+        &:first-child {
+          margin-left: 0;
+        }
+        a {
+          width: 100%;
+          display: block;
+          background: #1a598f;
+          height: 320px;
+        }
+        p {
+          font-size: 24px;
+          color: $ThirdContentBlockWrapperColor;
+          padding: 20px 0 10px 0;
+          margin: 0;
+        }
+        span {
+          font-size: 20px;
+          color: $ThirdContentBlockWrapperColor;
+        }
+      }
+    }
+  }
+  .FourthContentBlockWrapper {
+    width: 100%;
+    padding: 40px 0;
+    background: $FourthContentBlockWrapperBack;
+    .FourthContentBlock {
+      width: 1110px;
+      margin: 0 auto;
+      color: $FourthContentBlockColor;
+      .FourthContentBlockLeft {
+        float: left;
+        width: 31.53153153153153%;
+        margin-right: 2.7027027027027%;
+        span {
+          display: block;
+          font-size: 18px;
+          margin-top: 10px;
+        }
+      }
+      .FourthContentBlockRight {
+        float: left;
+        width: 65.76576576576577%;
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .FifthContentBlock {
+    width: 1110px;
+    margin: 40px auto;
+    .FifthContentLeft {
+      float: left;
+      margin-right: 2.7027027027027%;
+      width: 65.76576576576577%;
+    span {
+        display: block;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    }
+    .FifthContentRight {
+      float: left;
+      width: 31.53153153153153%;
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+}
